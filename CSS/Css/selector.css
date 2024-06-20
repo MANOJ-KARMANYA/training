@@ -1,0 +1,33 @@
+    .cls1,.cls3,.cls4{
+        color: aquamarine;
+        font-family:sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background: #000;
+    }
+    #d1,#d6{
+        color:blueviolet;
+        font-family:sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background:olive;
+
+    }
+    *div{
+        color:red;
+        font-family:sans-serif;
+        font-size: 50px;
+        text-align: center;
+        background:olive;
+
+    }
+
+    .border1{
+        border-style: solid;
+    border-width: 10px 20px 30px 40px;
+    }
+    .border2{
+        border-color: red;
+    border-style: dashed;
+    border-width: 5px
+    }

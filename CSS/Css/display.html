@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cls1 {
+        /* visibility: hidden;  */
+        display: none;
+      }
+      .convertBlockToInline{
+        border: 2px solid green;
+        display: inline;
+      }
+      .convertInlineToBlock{
+        border: 2px solid red;
+       display: block;
+      }
+      .prop-inlineblock{
+        border: 3px solid green;
+    font-size: 30px;
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../assets/images/dosa.jfif" alt="dosa" height="200px" width="300px"/>
+    <img class="cls1" src="../assets/images/samosa-1.jfif" alt="smosa" height="200px" width="300px" />
+    <img src="../assets/images/jalebi.jfif" alt="jalebi" height="200px" width="300px" />
+    <hr>
+    <h2> convert block element into inline </h2>
+
+   <div class="convertBlockToInline"> block one</div>
+   <div class="convertBlockToInline"> block Two</div>
+   <div class="convertBlockToInline"> block Three</div>
+
+   <h2> convert inline element into block </h2>
+     
+   <b class="convertInlineToBlock">Vijay</b>
+    <b class="convertInlineToBlock">Prashant</b> 
+    <b class="convertInlineToBlock">AjitKumar</b>
+
+    <h2> use of Display:inline-block </h2>
+        <strong class="prop-inlineblock">Panchashil Wankhede</strong>
+  </body>
+</html>

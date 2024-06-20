@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. descendant selector  */
+        .grandfather p{
+             color: blueviolet;  
+             font-size: 25px;  
+        }
+     /* 2. child selector */
+    .grandfather > p{
+        background-color: aqua;
+        text-align: center;
+        color: blue;
+    }
+    /* 3. adjecent sibling selector */
+    .grandfather+p{
+        color: greenyellow;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    /* 4.general sibling slectors (~)  */
+    .grandfather ~ p{
+        font-family: cursive;
+        background-color: tomato;
+        
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="grandfather">
+           <p>child -1</p>
+           <p>child -2</p>
+           <p>child -3</p>
+           <div><p>Grand son</p></div>
+           <p>child -4</p>
+    </div>
+    <p> nearest friend</p>
+    <p> outside friend</p>
+    <p> outside friend</p>
+
+
+
+</body>
+</html>

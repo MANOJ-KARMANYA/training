@@ -1,0 +1,140 @@
+5/6/24
+
+*css* :
+
+* it is us to design website or webapp
+* it makes webpage attrative, reponsive
+* latest version of css is css3
+* css stands for cascading style sheet
+* 
+
+
+
+
+Interview Question:-
+
+1. what are types of css?
+2. how many ways you can use css?
+3. there are three ways to use css?
+    i. inline css :- In the html file we use style as a attribute here, (in the start tag inself with properties and value).
+    ii. internal css :- In the html file we use style tag and in that we write css code. 
+                        syntax: 
+                        selector {
+                            peoperty:value;
+                            peoperty:value;
+                            peoperty:value;
+                        }
+    iii. external css :- In this we create a seperate css file and that we import in the html file by using link tag. 
+                        with a extention of .css (as a css seperate file)
+                    syntax: 
+                        selector {
+                            peoperty:value;
+                            peoperty:value;
+                            peoperty:value;
+                        }
+
+4. selector in css : selecting an element
+    i. element name selector: in this we use element name to apply css property 
+                     element {
+                            peoperty:value;
+                            peoperty:value;
+                     }
+    ii. group selector:we can make a group selectors name 
+                         element1,element2,element3,  {
+                            peoperty:value;
+                            peoperty:value;
+                     }
+    iii. id selector:(#)
+                             # id name{
+                            peoperty:value;
+                            peoperty:value;
+                      }
+    iv. class selector:(.) when we have to apply bunch of css property to multiple element.
+    v. universal selector:(*) it apply css property to all element available in webpage.
+
+    
+
+* how to use inspect element
+* border property
+* Border-radius
+
+*Box Model
+1. Content : it can be any text or image
+2. padding it is use to clear area between and element border
+3. border : a line drawn aroud an element
+4. margin : it is use to clear area around the element outside border.
+
+
+* position : it is use to move element after left, right, top and bottom value. 
+because every elment has default position:static thats why element will never move after applying left, right, top and bottom value. 
+
+position static: default
+position relative: // element can move by using left, right, top and bottom value.
+position absolute : when we want child element must move according its parent element. in this case parent element must have position:relative and child element must have position:absolute.
+position:fixed; when you have to fix element on view port (screen)
+position:sticky; it is used to stick element to screen border.
+
+z-index: it is use to decide stack priority of an element.
+it has two value 1 and -1
+* 1 means high priority
+* -1 means low priority
+
+
+*hover: it is psudo class which apply css property after over mouse on it.
+
+
+* background image property
+* opacity : it is use to make element background transparent
+            it value vary in between 0 t0 1.
+
+* visibility:hidden; element will but be never occupied by adjecent element
+*display:none; element will hidden but space will be occupied by adjecent element.
+
+* display:block: it is use to convert inline element into block.
+* display:inline: it is use to convert block element into inline.
+* display:inline-block: it is used when you have to apply height and width to the inline element which does not support the property.(basically in inline element we can't apply height and width)
+
+*float: it is used to float element either left or right direction (used for both inline and block element)
+float:left;
+float:right;
+float:none;
+float:inherit;
+
+*overflow :
+
+
+
+note :- we can put inline element into block but we can't put block element in inline. 
+
+
+
+
+
+
+*box-sizing: it include element padding and border size in its actual width.
+
+* mediaquery: it is used to apply diffrent style rule to an element according to different screen width.
+
+*syntax: @media screen and (breakpoint)
+{
+    css property for selector or element.
+}
+
+
+* max-width: css property will be applicable till its maximum defined width.
+* min-width: css property will be applicable from its minimum width to above.
+
+
+screen width >=1200px: extra large screen
+screen width >=992px: large screen
+screen width >=768px: medium screen
+screen width >=576px: small screen
+screen width <576px: extra small screen
+
+
+* display:flex;
+it is used to manage child element insied the parent element according to different screen width.
+- in this parent element must have dispay:flex property.
+
+*how to center element by using felx.
+* how to design login form.
