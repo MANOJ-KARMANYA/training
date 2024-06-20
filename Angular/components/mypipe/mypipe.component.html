@@ -1,0 +1,36 @@
+<p class="text-danger bg-warning">mypipe works!</p>
+
+<div>{{msg | uppercase}}</div>
+<div>{{msg | lowercase}}</div>
+<div>{{msg | titlecase}}</div>
+<div>{{msg | slice:5}}</div>
+<div>{{msg | slice:12}}</div>
+<hr>
+
+<!-- json pipe -->
+<p>{{emp | json}}</p>
+<hr>
+
+<!-- number pipe -->
+ <p>{{567 | number:"3.5-6"}}</p>
+ <p>{{0.567 | number:"3.5-6"}}</p>
+ <p>{{0.587 | number:"3.1-1"}}</p>
+<hr>
+
+ <!-- date pipe -->
+  <p>{{dateObj}}</p>
+  <p>{{dateObj | date}}</p>
+  <p>{{dateObj | date:"shortDate"}}</p>
+  <p>{{dateObj | date:"longDate"}}</p>
+  <hr>
+
+  <!-- currency pipe -->
+   <p>{{100 | currency:"GBP"}}</p>
+   <p>{{100 | currency:"USD"}}</p>
+   <p>{{100 | currency:"INR"}}</p>
+   <hr>
+
+   <!-- custom pipe -->
+    <p>cube of 5 is <strong>{{5 | cube}}</strong></p> 
+    <p>area of square with length5 is <strong>{{5 | square}}</strong></p> 
+    <p>area of circle with radius 5 is <strong>{{5 | circle}}</strong></p> 

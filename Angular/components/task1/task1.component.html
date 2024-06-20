@@ -1,0 +1,12 @@
+<p>task1 works!</p>
+
+<div *ngIf="value">
+    <img [src]="img1Path" [alt]="img1Name">
+    <h2>{{img1Text}}</h2>
+</div>
+<div *ngIf="!value">
+    <img [src]="img2Path" [alt]="img2Name">
+    <h2>{{img2Text}}</h2>
+</div>
+
+<button type="button" (click)="toggleImg()">Change</button>

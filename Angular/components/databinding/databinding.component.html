@@ -1,0 +1,20 @@
+<p>databinding works!</p>
+
+<!-- interpolation -->
+<h3>{{myName}}</h3>
+<p>{{100+200}}</p>
+<hr>
+
+<!-- property binding -->
+<img [src]="imgPath" [alt]="imgName">
+<hr>
+
+<!-- event binding  -->
+<button type="button" (click)="greeting()">Click me</button>
+<hr>
+
+<!-- ngModel  -->
+ <form>
+    <input type="text" name="txt1" [(ngModel)]="mydata">{{mydata}}
+ </form>
+
