@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 id="d1"> </h1>
+
+    <h3 id="d2"></h3>
+
+
+
+
+    <script>
+
+// DOM
+
+        // here we set value or data from JS to HTML (From JS)
+
+        document.getElementById("d1").innerHTML = "My Name is Manoj"
+        document.getElementById("d2").innerHTML = "I Live in Chennai"
+        
+
+        // console.log(document.getElementById("d1"))
+        // here we set style
+
+        document.getElementById("d1").style.color = "Green"
+        document.getElementById("d2").style.backgroundColor = "yellow"
+
+
+        // funtions
+
+        // 1. default functions
+
+        function greeting(){
+            return "Hello World!!"
+        
+        }
+
+
+        document.write(greeting(),"<br>");   // one way
+
+
+        let greet = greeting();     // Second way
+        document.write(greet,"<br>");   
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .myform {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aquamarine;
+
+
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+
+
+        <form name="myform" class="myform">
+
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" onblur="checkData()">
+            <br>
+            <span id="u_id"></span>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" onblur="checkPass()">
+            <br>
+            <span id="pass"></span>
+            <br>
+            <br>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" onblur="checkMail()">
+            <br>
+            <span id="e_mail"></span>
+            <br>
+            <br>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" onblur="checkContact()">
+            <br>
+            <span id="u_contact"></span>
+            <br>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="gender_male" name="gender" value="Male"> Male
+            <input type="radio" id="gender_female" name="gender" value="Female"> Female
+            <input type="radio" id="gender_others" name="gender" value="Female"> Others
+            <br>
+            <br>
+            <label>Education:</label>
+            <input type="checkbox" id="edu_ssc" name="education" value="SSC"> SSC
+            <input type="checkbox" id="edu_hsc" name="education" value="HSC"> HSC
+            <input type="checkbox" id="edu_diploma" name="education" value="Diploma"> Diploma
+            <input type="checkbox" id="edu_ug" name="education" value="UG"> UG
+            <input type="checkbox" id="edu_pg" name="education" value="PG"> PG
+            <br>
+            <br>
+            <button type="Submit">Submit</button>
+        
+        </form>
+        
+
+
+
+
+        <script>
+
+    function checkData(){
+    let username = document.getElementById("username").value;
+        if (username.trim()==""){
+            document.getElementById("u_id").innerHTML = "User ID is required"
+            document.getElementById("u_id").style.color="red";
+        }
+    
+    
+         else if (username.trim().match('^[a-zA-Z]{3,20}')){
+            document.getElementById("u_id").innerHTML = "User ID must be in proper format";
+            document.getElementById("u_id").style.color="red";
+
+            }
+
+            else {
+                document.getElementById("u_id").innerHTML = "";
+            }
+
+
+            
+    }
+
+  
+    
+function checkPass(){
+    let pass = document.getElementById("password").value;
+        if (pass.trim()==""){
+            document.getElementById("pass").innerHTML = "Password is required"
+            document.getElementById("pass").style.color="red";
+        }
+    
+    
+         else if (pass.trim().match('^[a-zA-Z]{3,20}')){
+            document.getElementById("pass").innerHTML = "User ID must be in proper format";
+            document.getElementById("pass").style.color="red";
+
+            }
+
+            else {
+                document.getElementById("pass").innerHTML = "";
+            }
+
+        }   
+    
+
+        function checkMail(){
+    let mail = document.getElementById("email").value;
+        if (mail.trim()==""){
+            document.getElementById("e_mail").innerHTML = "E-Mail is required"
+            document.getElementById("e_mail").style.color="red";
+        }
+
+            else {
+                document.getElementById("e_mail").innerHTML = "";
+            }
+
+        }      
+    
+        function checkContact(){
+    let contact = document.getElementById("contact").value;
+        if (contact.trim()==""){
+            document.getElementById("u_contact").innerHTML = "contact is required"
+            document.getElementById("u_contact").style.color="red";
+        }
+
+            else {
+                document.getElementById("u_contact").innerHTML = "";
+            }
+
+        }      
+    
+    
+    
+    
+    </script>
+
+
+        
+
+    </form>
+
+
+
+
+</body>
+</html>

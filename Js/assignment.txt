@@ -1,0 +1,10 @@
+5 img toggle
+2 img toggle and repeat
+textbox 1 to textbox 2 swaping the content
+swith case for all months using date() in js
+
+
+Username, Pssword, email, contact, gender
+
+center, top left, top right, bottom left, bottom right (old Task)
+
